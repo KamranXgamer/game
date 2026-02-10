@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.game{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 0.4rem solid transparent;
+    margin: 10px 15px;
+}
+.container,.head,.score-board,.message-container,.choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.head{
+    height: 5rem;
+    background-color: rgb(23, 12, 31);
+    color:white;
+    margin-bottom: 40px;
+}
+#rock{
+    background-image: url("rock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#paper{
+    background-image: url("paper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#scissors{
+    background-image: url("scissors.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#rock:hover, #paper:hover, #scissors:hover{
+    border: 0.4rem solid black;
+    cursor: pointer;
+}
+.score-board,.message-container,.choose{
+margin-top: 3rem;
+font-size: 2rem;
+font-weight: bold;
+}
+.score{
+    margin-left: 4.5rem;
+    margin-right: 2.5rem;
+}
+#user-score{
+    margin-left: 1.1rem;
+}
+#comp-score{
+    margin-left: 3.4rem;
+}
+#msg{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #081b31;
+    color: white;
+    cursor: default;
+    margin-top: 5rem;
+}
+.choice{
+    position: absolute;
+    left: 20%;
+    margin-top: 3rem;
+}
